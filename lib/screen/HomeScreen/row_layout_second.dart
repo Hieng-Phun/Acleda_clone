@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 final payMe = InkWell(
   onTap: () {},
   child: Container(
-    width: 141,
+    width: 135,
     height: 140,
     color: const Color.fromARGB(255, 28, 51, 82),
     child: Column(
@@ -20,7 +20,7 @@ final payMe = InkWell(
 final scanQr = InkWell(
   onTap: () {},
   child: Container(
-    width: 141,
+    width: 135,
     height: 140,
     color: const Color.fromARGB(255, 28, 51, 82),
     child: Column(
@@ -37,7 +37,7 @@ final scanQr = InkWell(
 final accounts = InkWell(
   onTap: () {},
   child: Container(
-    width: 141,
+    width: 135,
     height: 140,
     color: const Color.fromARGB(255, 28, 51, 82),
     child: Column(

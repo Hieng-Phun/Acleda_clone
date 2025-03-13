@@ -1,5 +1,7 @@
 import 'package:acleda_clone/screen/FavoritesScreen/favorites_page.dart';
 import 'package:acleda_clone/screen/HomeScreen/home_page.dart';
+import 'package:acleda_clone/screen/MenuScreen/menu_page.dart';
+import 'package:acleda_clone/screen/NotificationScreen/notification_page.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
@@ -12,7 +14,7 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   int currentIndex = 0;
 
-  final screen = [HomePage(), FavoritePage()];
+  final screen = [HomePage(), FavoritePage(), Notifications(), MenuPage()];
 
   @override
   Widget build(BuildContext context) {
