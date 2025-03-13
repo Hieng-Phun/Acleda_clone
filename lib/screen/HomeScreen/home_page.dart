@@ -1,4 +1,5 @@
 import 'package:acleda_clone/screen/HomeScreen/app_bar.dart';
+import 'package:acleda_clone/screen/HomeScreen/recent.dart';
 import 'package:acleda_clone/screen/HomeScreen/row_layout_first.dart';
 import 'package:acleda_clone/screen/HomeScreen/row_layout_second.dart';
 import 'package:acleda_clone/screen/HomeScreen/row_layout_third.dart';
@@ -37,17 +38,20 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 74, 106, 170),
       appBar: appBar,
-      body: Expanded(
-        child: Column(
-          children: [
-            rowLayoutFirst,
-            SizedBox(height: 3),
-            rowLayoutSecond,
-            SizedBox(height: 3),
-            rowLayoutThird,
-            mainServices,
-          ],
-        ),
+      body: ListView(
+        children: [
+          Column(
+            children: [
+              rowLayoutFirst,
+              SizedBox(height: 5),
+              rowLayoutSecond,
+              SizedBox(height: 5),
+              rowLayoutThird,
+              mainServices,
+              RecentPage(),
+            ],
+          ),
+        ],
       ),
     );
   }

@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 final payments = InkWell(
   onTap: () {},
   child: Container(
-    width: 135,
-    height: 140,
+    width: 125,
+    height: 130,
     color: const Color.fromARGB(255, 28, 51, 82),
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -20,8 +20,8 @@ final payments = InkWell(
 final topUp = InkWell(
   onTap: () {},
   child: Container(
-    width: 135,
-    height: 140,
+    width: 125,
+    height: 130,
     color: const Color.fromARGB(255, 28, 51, 82),
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -37,8 +37,8 @@ final topUp = InkWell(
 final transfers = InkWell(
   onTap: () {},
   child: Container(
-    width: 135,
-    height: 140,
+    width: 125,
+    height: 130,
     color: const Color.fromARGB(255, 28, 51, 82),
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,

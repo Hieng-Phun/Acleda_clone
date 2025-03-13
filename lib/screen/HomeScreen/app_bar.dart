@@ -8,9 +8,11 @@ final appBar = AppBar(
       onPressed: () {},
       icon: Icon(Icons.support_agent, color: Colors.white, size: 30),
     ),
-    IconButton(
-      onPressed: () {},
-      icon: Icon(Icons.qr_code_sharp, color: Colors.white, size: 30),
+    SizedBox(width: 12),
+    InkWell(
+      onTap: () {},
+      child: Image(image: AssetImage("assets/qr.png"), width: 25),
     ),
+    SizedBox(width: 20),
   ],
 );

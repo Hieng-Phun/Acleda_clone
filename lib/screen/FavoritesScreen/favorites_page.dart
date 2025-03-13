@@ -16,13 +16,7 @@ class _FavoritePageState extends State<FavoritePage> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 21, 61, 110),
       appBar: appBar,
-      body: Expanded(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [IconFavorite(), MainFavorite()],
-        ),
-      ),
+      body: ListView(children: [IconFavorite(), MainFavorite()]),
     );
   }
 }

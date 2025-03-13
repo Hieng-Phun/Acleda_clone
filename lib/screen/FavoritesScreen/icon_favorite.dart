@@ -5,9 +5,9 @@ class IconFavorite extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: SizedBox(
-        width: MediaQuery.of(context).size.width,
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 20),
+      child: Expanded(
         child: Icon(Icons.favorite, size: 150, color: Colors.white),
       ),
     );
