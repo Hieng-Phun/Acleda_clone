@@ -11,7 +11,7 @@ class MainFavorite extends StatelessWidget {
         topRight: Radius.circular(35),
       ),
       child: Container(
-        height: 500,
+        height: MediaQuery.of(context).size.height * 0.8,
         width: MediaQuery.of(context).size.width,
         color: Colors.white,
         child: Padding(

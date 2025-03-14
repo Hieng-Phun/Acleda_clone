@@ -12,7 +12,7 @@ class MainNotification extends StatelessWidget {
       ),
       child: Container(
         width: MediaQuery.of(context).size.width,
-        height: 550,
+        height: MediaQuery.of(context).size.height * 0.66,
         color: const Color.fromARGB(255, 215, 215, 215),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -23,6 +23,7 @@ class MainNotification extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(12.0),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         children: [
@@ -59,85 +60,6 @@ class MainNotification extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 12),
-              Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          CircleAvatar(
-                            backgroundImage: AssetImage("assets/logo.png"),
-                          ),
-                          SizedBox(width: 12),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                "ACLEDA",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15,
-                                ),
-                              ),
-                              Text(
-                                "Aug 02, 2024 | 02:04 PM",
-                                style: TextStyle(fontSize: 12),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                      SizedBox(height: 5),
-                      Text(
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        "You have paid 1.00\$ from account 3400****347 to ABA Bank ",
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(height: 12),
-              Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          CircleAvatar(
-                            backgroundImage: AssetImage("assets/logo.png"),
-                          ),
-                          SizedBox(width: 12),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                "ACLEDA",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15,
-                                ),
-                              ),
-                              Text(
-                                "Aug 02, 2024 | 02:04 PM",
-                                style: TextStyle(fontSize: 12),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                      SizedBox(height: 5),
-                      Text(
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        "You have paid 1.00\$ from account 3400****347 to ABA Bank ",
-                      ),
-                    ],
-                  ),
-                ),
-              ),
             ],
           ),
         ),

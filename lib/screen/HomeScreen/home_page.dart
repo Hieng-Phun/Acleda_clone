@@ -42,11 +42,11 @@ class _HomePageState extends State<HomePage> {
         children: [
           Column(
             children: [
-              rowLayoutFirst,
-              SizedBox(height: 5),
-              rowLayoutSecond,
-              SizedBox(height: 5),
-              rowLayoutThird,
+              RowLayoutFirst(),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.002),
+              RowLayoutSecond(),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.002),
+              RowLayoutThird(),
               mainServices,
               RecentPage(),
             ],
