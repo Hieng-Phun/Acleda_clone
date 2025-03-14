@@ -7,15 +7,15 @@ class Option extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Padding(
-        padding: const EdgeInsets.only(top: 50, bottom: 30),
+        padding: const EdgeInsets.only(top: 50, bottom: 10),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             ClipRRect(
-              borderRadius: BorderRadius.all(Radius.circular(40)),
+              borderRadius: BorderRadius.all(Radius.circular(50)),
               child: Chip(
-                padding: EdgeInsets.symmetric(horizontal: 30, vertical: 12),
+                padding: EdgeInsets.symmetric(horizontal: 35, vertical: 12),
                 label: Text(
                   "Transactions",
                   style: TextStyle(
@@ -26,7 +26,7 @@ class Option extends StatelessWidget {
               ),
             ),
             ClipRRect(
-              borderRadius: BorderRadius.all(Radius.circular(40)),
+              borderRadius: BorderRadius.all(Radius.circular(50)),
               child: Chip(
                 padding: EdgeInsets.symmetric(horizontal: 15, vertical: 12),
                 label: Text(

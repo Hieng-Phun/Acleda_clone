@@ -12,7 +12,7 @@ class MainNotification extends StatelessWidget {
       ),
       child: Container(
         width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height * 0.66,
+        height: MediaQuery.of(context).size.height * 0.6,
         color: const Color.fromARGB(255, 215, 215, 215),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
